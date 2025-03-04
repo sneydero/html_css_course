@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<!-- It is a tag that allows to give information to the server  -->
+<html lang="en">
+
+<head>
+    <!-- It defines the head of the document and contain information about itself (metadata, scripts, title, styles) -->
+     <meta charset="UTF-8"> <!--It defines the characters in the page -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Sneyder">
+
+    <meta name="description" content="Here you add rather information about this page">
+<!-- metadata for browsers -->
+    <meta name="keywords" content="html">
+
+    <title>Frontend Mentor | Blog preview card</title>
+
+    <link rel="icon" href="./img/favicon.ico">
+    <style>
+        /* b {
+                font-weight: normal;
+            } */
+
+        button {
+            /* remove the default style for the button */
+            all: unset;
+        }
+    </style>
+</head>
+
+<body>
+        <!-- It is the body of the web site. Everything inside will be visible into browsers -->
+       <center>
+        <h3>Formulario</h3>
+        <form>
+            <label for="entrada">Entrada de texto</label>
+            <input type="text" id="entrada" name="entrada" required placeholder="Entrada de texto">
+
+            <br>
+            <br>
+
+            <label for="correo">Entrada correo</label>
+            <input type="email" id="correo" required placeholder="Entrada de correo">
+
+            <br>
+            <br>
+
+            <label for="contrasena">Entrada de contraseña</label>
+            <input type="password" id="contrasena" placeholder="Entrada de contraseña">
+
+            <br>
+            <br>
+
+            <label for="numero">Entrada de numero</label>
+            <input type="number" id="numero" min="0" max="3" placeholder="Entrada de numero">
+            
+            <br>
+            <br>
+
+            <select>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+            </select>
+
+            <br>
+            <br>
+
+            <input id="rojo" type="checkbox"><label for="rojo">Rojo</label>
+            <input id="verde" type="checkbox"><label for="verde">Verde</label>
+
+            <br>
+            <br>
+
+            <input id="blanco" type="radio" name="color"><label for="blanco">Blanco</label>
+            <input id="negro" type="radio" name="color"><label for="negro">Negro</label>
+
+            <br>
+            <br>
+
+            <input type="submit" value="Enviar Formulario">
+        </form>
+       </center>
+       
+        <header>Cabezote</header>
+
+        <nav>Barra de navegacion</nav>
+
+        <section>Seccion principal</section>
+
+        <aside>
+            <div>Noticia 1</div>
+            <div>Noticia 2</div>
+            <div>Noticia 3</div>
+        </aside>
+
+        <article>
+
+            <p>When the <b>Club</b> is aweasome, the party is <b>incredible</b></p>
+
+            <p>Using <strong>strong element</strong> into paraghap</p>
+
+            <p>Using <em>em element</em> into paraghap</p>
+
+            <p>Using <i>i element</i> into paraghap</p>
+
+            <button type="button">
+                Click here
+                <i>salt no added</i>
+            </button>
+
+
+            <blockquote>
+                This is the blockquote for grouping pharagraps
+            </blockquote>
+
+            <figure>
+                <img src="" alt="">
+                <figcaption>
+                    This is the caption for the image
+                </figcaption>
+            </figure>
+            <video src="sources/3. Tipos de datos.mp4" width="250" height="250" controls autoplay muted loop>
+                This message is in case the video does not exist!
+            </video>
+
+            <details>
+                <summary>This is the summary details</summary>
+                <p>This is the details of the summary</p>
+            </details>
+            <footer>
+                <address><a href="https://github.com/sneydero/first-angular">GitHub Sneyder Ospina</a></address>
+            </footer>
+        </article>
+
+        <h1>Titulo</h1>
+        <h2>Titulo</h2>
+        <h3>Titulo</h3>
+        <h4>Titulo</h4>
+        <h5>Titulo</h5>
+        <h6>Titulo</h6>
+
+        <p>Esto es un <b>parrafo</b>, <br>esto es otro parrafo</p>
+
+        <!-- interlineado en la pagina -->
+        <hr> 
+        <a href="#">Vinculo</a>
+        <figure>
+            <img src="" alt="imagen">            
+        </figure>
+        <figcaption>Caption for the image</figcaption>
+       
+
+        <ol>
+            <li>Car</li>
+            <li>Ship</li>
+            <li>Plane</li>            
+        </ol>
+
+        <ul>
+            <li>Car</li>
+            <li>Ship</li>
+            <li>Plane</li>
+        </ul>
+
+        <table border="1">
+            <thead>
+            <tr>
+                <th>Month</th>
+                <th>Saved</th>
+            </tr>
+        </thead>
+            <tbody>
+            <tr>
+                <td>January</td>
+                <td>$100</td>
+            </tr>
+
+            <tr>
+                <td>February</td>
+                <td>$3000</td>
+            </tr>
+        </tbody>
+        </table>
+
+        <h1>Exam Result</h1>
+        <p>Carlos: <meter value="94" min="0" max="100" high="90"></meter> </p>
+        <p>Andres:<meter value="60" min="0" max="100" high="90"></meter></p>
+        <p>Ana:<meter value="85" min="0" max="100" high="90"></meter></p>
+        <p>Pedro:<meter value="45" min="0" max="100" high="90"></meter></p>
+
+        <h2>Selling Result</h2>
+        <p>February: <progress value="94" min="0" max="100"></progress> </p>
+        <p>March:<progress value="60" min="0" max="100"></progress></p>
+        <p>April:<progress value="85" min="0" max="100"></progress></p>
+        <p>May:<progress value="45" min="0" max="100"></progress></p>
+
+        <a href="https://www.online-convert.com/es">Online online-convert</a>
+
+        <audio  autoplay loop controls preload="auto">
+            <!-- Ogg .ogg VORBIS - poco espacio -->
+            <!-- MP3 .mp3 - archivo comprimido con mayor calidad de audio -->
+            <!-- WAV .wav- Sin compresion, gran calidad, pero mucho consudo de datos -->
+            <!-- ACC .m4a, .m4b, .m4p, .mp4, .acc - Gran compresion con excelente calidad de audio -->
+
+            <!-- online-convert.com -->
+            <source src="" type="audio/mp4">
+        </audio>
+        <br><hr>
+        <video src="sources/3. Tipos de datos.mp4" width="250" height="250" controls autoplay muted loop>
+            <!-- THEORA OGG .ogv -->
+             <!-- MP4 .mp4 Safari IOS-->
+              <!-- WEBM .webm -->
+               <source src="video/vide.mp4" type="video/mp4">
+            This message is in case the video does not exist!
+        </video>
+
+        <iframe src="https://www.youtube.com/embed/HfzbN5ky5Co?si=d7ZYy0B_mN9DMQHA" frameborder="0" width="500" height="200" allowfullscreen></iframe>
+        <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1991575247&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+        
+        
+        <footer>
+            Este es el pie de pagina
+            <address><a href="https://github.com/sneydero/first-angular">GitHub Sneyder Ospina</a></address>
+        </footer>
+
+</body>
+
+</html>
