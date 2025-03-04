@@ -30,13 +30,69 @@
 
 <body>
         <!-- It is the body of the web site. Everything inside will be visible into browsers -->
+       <center>
+        <h3>Formulario</h3>
+        <form>
+            <label for="entrada">Entrada de texto</label>
+            <input type="text" id="entrada" name="entrada" required placeholder="Entrada de texto">
+
+            <br>
+            <br>
+
+            <label for="correo">Entrada correo</label>
+            <input type="email" id="correo" required placeholder="Entrada de correo">
+
+            <br>
+            <br>
+
+            <label for="contrasena">Entrada de contraseña</label>
+            <input type="password" id="contrasena" placeholder="Entrada de contraseña">
+
+            <br>
+            <br>
+
+            <label for="numero">Entrada de numero</label>
+            <input type="number" id="numero" min="0" max="3" placeholder="Entrada de numero">
+            
+            <br>
+            <br>
+
+            <select>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+            </select>
+
+            <br>
+            <br>
+
+            <input id="rojo" type="checkbox"><label for="rojo">Rojo</label>
+            <input id="verde" type="checkbox"><label for="verde">Verde</label>
+
+            <br>
+            <br>
+
+            <input id="blanco" type="radio" name="color"><label for="blanco">Blanco</label>
+            <input id="negro" type="radio" name="color"><label for="negro">Negro</label>
+
+            <br>
+            <br>
+
+            <input type="submit" value="Enviar Formulario">
+        </form>
+       </center>
+       
         <header>Cabezote</header>
 
         <nav>Barra de navegacion</nav>
 
         <section>Seccion principal</section>
 
-        <aside>Columna</aside>
+        <aside>
+            <div>Noticia 1</div>
+            <div>Noticia 2</div>
+            <div>Noticia 3</div>
+        </aside>
 
         <article>
 
