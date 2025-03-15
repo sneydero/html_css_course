@@ -3,7 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <title>Syntax CSS</title>
-
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
         <style>
 
             *{
@@ -11,6 +13,7 @@
                 padding: 0;
                 list-style: none;
                 font-family: sans-serif;
+                /* https://fonts.google.com/ */
             }
             
             header{
@@ -19,7 +22,7 @@
                 margin: 20px auto;
                 width: 1000px;
                 height: 120px;
-                background: #444;
+                
             }
 
             #logo{
@@ -27,8 +30,11 @@
                 top: 30px;
                 left: 30px;                
                 width: 200px;
-                height: 60px;
-                background: #ccc;
+                height: 60px;                
+                font-family: "Kaushan Script", cursive;
+                font-size: 50px;
+                text-align: center;
+                line-height: 60px;
             }
 
             .redes{
@@ -37,21 +43,27 @@
                 height: 42px;
                 border-radius: 100%;
                 background: #ccc;
+                text-align: center;
+                line-height: 42px;
+                color: white;
             }
 
             #icono1{
                 top: 42px;
                 right: 120px;
+                background: blue;
             }
 
             #icono2{
                 top: 42px;
                 right: 70px;
+                background: goldenrod;
             }
 
             #icono3{
                 top: 42px;
                 right: 19px;
+                background: grey;
             }
 
             nav{
@@ -68,6 +80,10 @@
                 height: 48px;
                 background: #333;
                 margin: 0px 2px;
+                font-family: "Kaushan Script", cursive;
+                color: white;
+                text-align: center;
+                line-height: 48px;
             }
 
             #top{
@@ -75,7 +91,7 @@
                 margin: 20px auto;
                 width: 1000px;
                 height: 192px;
-                background: #888;
+                
             }
 
             #top ul{
@@ -84,27 +100,48 @@
             }
 
             #top ul li{
-                float: left;
-                background: #333;
+                float: left;               
                 width: 326px;
                 height: 192px;
-                margin-right: 10px;                
+                margin-right: 10px;   
+                text-align: center;             
+            }
+
+            #top ul li img{
+                border-radius: 100%;
+                height: 100px;          
+            }
+
+            #top ul li h1{
+                font-family: "Kaushan Script", cursive;       
+            }
+
+            #top ul li p{
+                font-size: 14px;
+                margin: 10px; 
             }
 
             section{
                 position: relative;
                 margin: 20px auto;
                 width: 1000px;
-                height: 453px;
-                background: #aaa;
+                height: 453px;               
             }
 
             aside#izq{
                 position: absolute;
                 left: 0;                             
                 width: 200px;
-                height: 453px;
-                background: #ccc;
+                height: 453px;                
+            }
+
+            aside#izq ul li{
+                background: #aaa;
+                padding: 10px;
+                margin: 2px 10px;
+                list-style-position: inside;
+                list-style-type: square;
+                /* list-style-image: url(download1.jpg);                    */
             }
 
             aside#der{
@@ -120,7 +157,24 @@
                 left: 200px;                           
                 width: 600px;
                 height: 453px;
-                background: #444;
+                
+            }
+
+            article h1{
+                font-family: "Kaushan Script", cursive;
+                font-size: 40px;
+                margin: 20px;
+            }
+
+            article p{                
+                margin: 5px 20px;
+                font-size: 14px;
+                text-align: justify;
+            }
+
+            article p img{
+                float: left;
+                margin-right: 20px;
             }
 
             footer{
@@ -129,6 +183,9 @@
                 width: 1000px;
                 height: 70px;
                 background: #888;
+                text-align: center;
+                line-height: 70px;
+                color: white;
             }
 
         </style>
@@ -174,7 +231,14 @@
         </div>
 
         <section>
-            <aside id="izq"></aside>
+            <aside id="izq">
+                <ul>
+                    <li>Link1</li>
+                    <li>Link1</li>
+                    <li>Link1</li>
+                    <li>Link1</li>
+                </ul>
+            </aside>
             <article>
                 <h1>Lorem Ipsum</h1>
                 <p><img src="download1.jpg" alt="test" width="100">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
