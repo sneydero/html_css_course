@@ -6,191 +6,13 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
-        <style>
-
-            *{
-                margin: 0;
-                padding: 0;
-                list-style: none;
-                font-family: sans-serif;
-                /* https://fonts.google.com/ */
-            }
-            
-            header{
-                /* margin: top right bottom left */
-                position: relative;
-                margin: 20px auto;
-                width: 1000px;
-                height: 120px;
-                
-            }
-
-            #logo{
-                position: absolute;
-                top: 30px;
-                left: 30px;                
-                width: 200px;
-                height: 60px;                
-                font-family: "Kaushan Script", cursive;
-                font-size: 50px;
-                text-align: center;
-                line-height: 60px;
-            }
-
-            .redes{
-                position: absolute;                          
-                width: 42px;
-                height: 42px;
-                border-radius: 100%;
-                background: #ccc;
-                text-align: center;
-                line-height: 42px;
-                color: white;
-            }
-
-            #icono1{
-                top: 42px;
-                right: 120px;
-                background: blue;
-            }
-
-            #icono2{
-                top: 42px;
-                right: 70px;
-                background: goldenrod;
-            }
-
-            #icono3{
-                top: 42px;
-                right: 19px;
-                background: grey;
-            }
-
-            nav{
-                position: relative;
-                margin: auto;
-                width: 1000px;
-                height: 48px;
-                background: #aaa;
-            }
-
-            .botones{
-                float: left;
-                width: 196px;
-                height: 48px;
-                background: #333;
-                margin: 0px 2px;
-                font-family: "Kaushan Script", cursive;
-                color: white;
-                text-align: center;
-                line-height: 48px;
-            }
-
-            #top{
-                position: relative;
-                margin: 20px auto;
-                width: 1000px;
-                height: 192px;
-                
-            }
-
-            #top ul{
-                width: 1010px;
-                height: 192px;
-            }
-
-            #top ul li{
-                float: left;               
-                width: 326px;
-                height: 192px;
-                margin-right: 10px;   
-                text-align: center;             
-            }
-
-            #top ul li img{
-                border-radius: 100%;
-                height: 100px;          
-            }
-
-            #top ul li h1{
-                font-family: "Kaushan Script", cursive;       
-            }
-
-            #top ul li p{
-                font-size: 14px;
-                margin: 10px; 
-            }
-
-            section{
-                position: relative;
-                margin: 20px auto;
-                width: 1000px;
-                height: 453px;               
-            }
-
-            aside#izq{
-                position: absolute;
-                left: 0;                             
-                width: 200px;
-                height: 453px;                
-            }
-
-            aside#izq ul li{
-                background: #aaa;
-                padding: 10px;
-                margin: 2px 10px;
-                list-style-position: inside;
-                list-style-type: square;
-                /* list-style-image: url(download1.jpg);                    */
-            }
-
-            aside#der{
-                position: absolute;
-                right: 0;                           
-                width: 200px;
-                height: 453px;
-                background: #ccc;
-            }
-
-            article{
-                position: absolute;
-                left: 200px;                           
-                width: 600px;
-                height: 453px;
-                
-            }
-
-            article h1{
-                font-family: "Kaushan Script", cursive;
-                font-size: 40px;
-                margin: 20px;
-            }
-
-            article p{                
-                margin: 5px 20px;
-                font-size: 14px;
-                text-align: justify;
-            }
-
-            article p img{
-                float: left;
-                margin-right: 20px;
-            }
-
-            footer{
-                position: relative;
-                margin: 20px auto;
-                width: 1000px;
-                height: 70px;
-                background: #888;
-                text-align: center;
-                line-height: 70px;
-                color: white;
-            }
-
-        </style>
+       <link rel="stylesheet" href="./css/style.css" type="text/css" media="">
     </head>
     <body>
+
+        <div id="chat">
+            Chat
+        </div>
 
         <header>
             <div id="logo">Logotipo</div>
@@ -202,11 +24,11 @@
 
         <nav>
             <ul>
-                <li class="botones">Botón 1</li>
-                <li class="botones">Botón 2</li>
-                <li class="botones">Botón 3</li>
-                <li class="botones">Botón 4</li>
-                <li class="botones">Botón 5</li>
+                <a href="#"><li class="botones">Botón 1</li></a>
+                <a href="#"><li class="botones">Botón 2</li></a>
+                <a href="#"><li class="botones">Botón 3</li></a>
+                <a href="#"><li class="botones">Botón 4</li></a>
+                <a href="#"><li class="botones">Botón 5</li></a>
             </ul>
         </nav>
 
@@ -233,10 +55,10 @@
         <section>
             <aside id="izq">
                 <ul>
-                    <li>Link1</li>
-                    <li>Link1</li>
-                    <li>Link1</li>
-                    <li>Link1</li>
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#">Link 4</a></li>
                 </ul>
             </aside>
             <article>
@@ -251,7 +73,16 @@
                         making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, 
                         and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
             </article>
-            <aside id="der"></aside>
+            <aside id="der">
+                <h1>Ingreso</h1>
+
+                <form>
+                    <input type="text" placeholder="User">
+                    <input type="password" placeholder="Password">
+                    <input type="email" placeholder="Email">
+                    <input type="submit" value="Send">
+                </form>
+            </aside>
         </section>
 
         <footer>
